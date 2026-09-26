@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ajith Nagappan — Digital Marketing Lead specializing in SEO, AEO, Google Ads, Meta Ads, performance marketing, lead generation and brand visibility.">
+<meta name="keywords" content="Ajith Nagappan, Digital Marketing Lead, SEO Specialist, AEO Specialist, Google Ads, Meta Ads, Performance Marketing, Lead Generation">
+<meta name="author" content="Ajith Nagappan">
+<title>Ajith Nagappan — Digital Marketing | SEO & AEO Specialist</title>
+<style>
+:root{
+  --navy:#07111f; --navy2:#0c1c31; --ink:#0b1728; --muted:#627085;
+  --paper:#f6f8fb; --white:#fff; --line:#dfe6ef; --blue:#1769ff;
+  --cyan:#16b8c7; --lime:#c8f23b; --shadow:0 20px 60px rgba(7,17,31,.10);
+  --radius:24px; --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(92%,var(--max));margin:auto}
+.nav{position:fixed;z-index:50;top:0;left:0;right:0;background:rgba(246,248,251,.86);backdrop-filter:blur(18px);border-bottom:1px solid rgba(11,23,40,.08)}
+.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:950;letter-spacing:-.06em;font-size:1.2rem}.logo i{font-style:normal;color:var(--blue)}
+.nav-links{display:flex;align-items:center;gap:27px;font-size:.88rem;font-weight:700;color:#526176}
+.nav-links a:hover{color:var(--blue)}
+.nav-cta{background:var(--navy);color:white;padding:11px 17px;border-radius:999px}
+.menu{display:none;border:0;background:none;font-size:1.4rem;color:var(--navy)}
+.hero{background:var(--navy);color:white;padding:145px 0 90px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:650px;height:650px;border-radius:50%;background:var(--blue);opacity:.16;filter:blur(100px);right:-240px;top:-180px}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.35fr .65fr;gap:60px;align-items:center}
+.eyebrow,.kicker{text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:900}
+.eyebrow{color:var(--lime);margin-bottom:18px}
+h1{font-size:clamp(3.4rem,7vw,6.5rem);line-height:.9;letter-spacing:-.075em;max-width:850px}
+h1 span{color:var(--lime)}
+.hero-copy{max-width:720px;color:#c3cedd;font-size:1.1rem;margin:28px 0 32px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:999px;font-weight:850;border:1px solid rgba(255,255,255,.18)}
+.btn-primary{background:var(--lime);color:var(--navy);border-color:var(--lime)}
+.btn-ghost:hover{border-color:white}
+.profile{padding:13px;border:1px solid rgba(255,255,255,.13);border-radius:30px;background:rgba(255,255,255,.05);box-shadow:var(--shadow)}
+.profile img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:22px;background:#dfe7ef}
+.profile-meta{display:flex;justify-content:space-between;gap:15px;padding:16px 5px 4px;color:#9fb0c5;font-size:.8rem}
+.profile-meta b{color:white}
+.trust{background:white;border-bottom:1px solid var(--line)}
+.trust-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:19px 0;color:#67768b;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+section{padding:105px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}
+.kicker{color:var(--blue);margin-bottom:9px}
+h2{font-size:clamp(2.2rem,4.5vw,4rem);line-height:.98;letter-spacing:-.065em}
+.section-head p{max-width:480px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.stat{background:white;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 8px 28px rgba(7,17,31,.04)}
+.stat strong{display:block;font-size:2rem;letter-spacing:-.06em;color:var(--navy)}
+.stat span{color:var(--muted);font-size:.85rem}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.card p{color:#637085}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:8px 11px;font-size:.78rem;font-weight:750;color:#526176;background:#fbfcfe}
+.experience{display:grid;gap:0}
+.exp{display:grid;grid-template-columns:210px 1fr;gap:35px;padding:26px 0;border-bottom:1px solid var(--line)}
+.exp:last-child{border-bottom:0}
+.exp-date{color:var(--blue);font-weight:850;font-size:.84rem}
+.exp h3{font-size:1.35rem;letter-spacing:-.03em}
+.exp .company{font-weight:800;color:#506075;margin:2px 0 8px}
+.exp p{color:var(--muted)}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}
+.project{background:white;border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:.25s}
+.project:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.project-top{min-height:115px;background:var(--navy);color:white;padding:25px;display:flex;align-items:end;justify-content:space-between}
+.project-top b{font-size:1.35rem;letter-spacing:-.04em}.project-top small{color:#9eb0c7}
+.project-body{padding:23px}
+.project-body p{color:var(--muted);font-size:.92rem}
+.project-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:17px}
+.project-link{font-size:.76rem;font-weight:850;color:var(--blue);border:1px solid #d9e5ff;border-radius:999px;padding:7px 10px}
+.case{background:var(--navy);color:white}
+.case .section-head p{color:#9eafc3}
+.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.case-card{background:#0c1b2e;border:1px solid #1d3048;border-radius:22px;overflow:hidden}
+.case-card img{width:100%;height:245px;object-fit:cover;background:#fff}
+.case-content{padding:23px}.case-content h3{font-size:1.25rem}.case-content p{color:#9eafc3;margin-top:7px}
+.case-label{color:var(--lime);font-size:.72rem;text-transform:uppercase;letter-spacing:.13em;font-weight:900}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.gallery figure{background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.gallery img{width:100%;height:185px;object-fit:cover}
+.gallery figcaption{padding:13px;font-size:.78rem;color:#68768a;font-weight:750}
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.tool{background:white;border:1px solid var(--line);padding:19px;border-radius:16px;font-weight:800}
+.tool span{display:block;color:var(--muted);font-size:.78rem;font-weight:500;margin-top:3px}
+.contact{background:linear-gradient(135deg,var(--navy),#102c4a);color:white;border-radius:30px;padding:58px}
+.contact-grid{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end}
+.contact h2{max-width:700px}.contact p{color:#b7c4d4;max-width:650px;margin-top:13px}
+.contact .btn{background:var(--lime);border-color:var(--lime);color:var(--navy)}
+footer{padding:32px 0 45px;color:#748196;font-size:.82rem}
+.footer-inner{display:flex;justify-content:space-between;gap:20px}.socials{display:flex;gap:18px}.socials a:hover{color:var(--blue)}
+@media(max-width:900px){
+ .nav-links{display:none}.menu{display:block}.hero-grid,.about-grid,.case-grid{grid-template-columns:1fr}
+ .stats{grid-template-columns:repeat(2,1fr)}.project-grid{grid-template-columns:1fr}
+ .gallery{grid-template-columns:1fr 1fr}.tools{grid-template-columns:1fr 1fr}
+ .section-head{display:block}.section-head p{margin-top:14px}.contact-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+ .hero{padding-top:120px}.stats{grid-template-columns:1fr}.gallery,.tools{grid-template-columns:1fr}
+ .exp{grid-template-columns:1fr;gap:5px}.contact{padding:34px 24px}section{padding:76px 0}
+ .footer-inner{flex-direction:column}
+}
+
+.contact-details{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:24px}.contact-details a{color:#d9e4f0;font-weight:750;font-size:.9rem}.contact-details a:hover{color:var(--lime)}.contact-actions{display:flex;flex-direction:column;gap:10px;min-width:210px}.contact .btn-outline{background:transparent;color:white;border-color:rgba(255,255,255,.25)}.contact .btn-outline:hover{border-color:white}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+ <div class="container nav-inner">
+  <a class="logo" href="#home">AJITH<span>.</span></a>
+  <div class="nav-links">
+   <a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Work</a><a href="#notable">Notable Projects</a><a href="#case-studies">Case Studies</a><a href="#contact" class="nav-cta">Let's Connect</a>
+  </div>
+  <button class="menu" onclick="toggleMenu()" aria-label="Menu">☰</button>
+ </div>
+</nav>
+
+<header class="hero" id="home">
+ <div class="container hero-grid">
+  <div>
+   <div class="eyebrow">Digital Marketing • SEO • AEO • Performance</div>
+   <h1>Building digital growth that <span>gets noticed.</span></h1>
+   <p class="hero-copy">I'm <strong>Ajith Nagappan</strong>, a Digital Marketing Lead with 5+ years of hands-on experience across SEO, AEO, Google Ads, Meta Ads, lead generation and brand visibility. I turn search data, campaign insights and content into practical growth strategies.</p>
+   <div class="buttons"><a class="btn btn-primary" href="#work">Explore my work ↗</a><a class="btn btn-ghost" href="#contact">Let's connect</a></div>
+  </div>
+  <div class="profile">
+   <img src="assets/ajith-profile.jpg" alt="Ajith Nagappan">
+   <div class="profile-meta"><span><b>Based in</b><br>Kanyakumari, Tamil Nadu</span><span><b>Focus</b><br>SEO + AEO + Ads</span></div>
+  </div>
+ </div>
+</header>
+
+<div class="trust"><div class="container trust-row"><span>SEO</span><span>AEO</span><span>Google Ads</span><span>Meta Ads</span><span>Lead Generation</span><span>Performance Marketing</span></div></div>
+
+<section id="results">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">01 — Impact</div><h2>Numbers that<br>tell the story.</h2></div><p>Selected career and campaign outcomes from the experience documented in my professional profile.</p></div>
+  <div class="stats">
+   <div class="stat"><strong>₹3L+</strong><span>Google & Meta Ads managed</span></div>
+   <div class="stat"><strong>20+</strong><span>Keywords on Google's first page</span></div>
+   <div class="stat"><strong>100+</strong><span>Qualified leads generated</span></div>
+   <div class="stat"><strong>30+</strong><span>Client websites managed</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="about">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">02 — About Me</div><h2>The person behind<br>the campaigns.</h2></div><p>Digital marketing is not only about traffic. I focus on understanding intent, building visibility and connecting marketing activity with business outcomes.</p></div>
+  <div class="about-grid">
+   <div class="card"><p><strong>Hi, I'm Ajith.</strong></p><p style="margin-top:12px">I'm a Digital Marketing professional specialising in <strong>SEO, AEO, Google Ads, Meta Ads, performance marketing and lead generation</strong>. Over 5+ years, I've worked with education, technology, SaaS, international service businesses and marketing teams.</p><p style="margin-top:12px">My role often sits between strategy and execution: researching opportunities, improving websites, managing search visibility, running paid campaigns, analysing data and turning findings into the next action.</p><div class="chips"><span class="chip">SEO</span><span class="chip">AEO</span><span class="chip">Google Ads</span><span class="chip">Meta Ads</span><span class="chip">Lead Generation</span><span class="chip">GTM</span><span class="chip">GA4</span><span class="chip">Content Strategy</span></div></div>
+   <div class="card"><p><strong>How I work</strong></p><div class="chips"><span class="chip">Research first</span><span class="chip">Intent-led strategy</span><span class="chip">Technical SEO</span><span class="chip">Content optimisation</span><span class="chip">Campaign execution</span><span class="chip">Measurement</span><span class="chip">Continuous optimisation</span><span class="chip">Clear reporting</span><span class="chip">Client communication</span><span class="chip">Cross-team collaboration</span></div><p style="margin-top:20px"><strong>Professional strengths</strong></p><div class="chips"><span class="chip">Team Leadership</span><span class="chip">Client Relations</span><span class="chip">Strategic Planning</span><span class="chip">Data-driven thinking</span><span class="chip">Cross-team collaboration</span></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="experience">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">03 — Experience</div><h2>Where I've<br>worked.</h2></div><p>Professional experience and the website portfolios connected to each role.</p></div>
+  <div class="card experience">
+   <div class="exp"><div class="exp-date">June 2026 — Present</div><div><h3>SEO Manager</h3><div class="company">Spacemen Digital · Kazhakootam</div><p>Currently working on SEO and AEO projects across technology, SaaS and digital businesses. Current project portfolio includes JustCall, Track3D, CSSI Services and The Zoomies Stores.</p><div class="project-links"><a class="project-link" href="https://justcall.io/" target="_blank">JustCall</a><a class="project-link" href="https://track3d.ai/" target="_blank">Track3D</a><a class="project-link" href="https://cssiservices.com/" target="_blank">CSSI Services</a><a class="project-link" href="https://thezoomiesstores.in/" target="_blank">The Zoomies Stores</a></div></div></div>
+   <div class="exp"><div class="exp-date">August 2025 — May 2026</div><div><h3>SEO Analyst & Ads Manager</h3><div class="company">Advantage Marketing Solutions</div><p>Managed SEO and paid advertising work across multiple business websites and campaigns.</p><div class="project-links"><a class="project-link" href="https://advantagemsolutions.com/" target="_blank">advantagemsolutions.com</a><a class="project-link" href="https://eiqcosmetics.com/" target="_blank">eiqcosmetics.com</a><a class="project-link" href="https://jbncleaning.au/" target="_blank">jbncleaning.au</a><a class="project-link" href="https://hopecleaning.au/" target="_blank">hopecleaning.au</a><a class="project-link" href="https://jacremovals.com/" target="_blank">jacremovals.com</a></div></div></div>
+   <div class="exp"><div class="exp-date">April 2023 — July 2025</div><div><h3>SEO Analyst</h3><div class="company">XELUXE INDIA</div><p>Worked on SEO, content and search visibility for Xeluxe and its engineering consultancy presence.</p><div class="project-links"><a class="project-link" href="https://www.linkedin.com/company/xeluxe-engineering-consultancy/" target="_blank">Xeluxe LinkedIn ↗</a></div></div></div>
+   <div class="exp"><div class="exp-date">Earlier Experience</div><div><h3>Digital Marketing Executive</h3><div class="company">Shodwe Corporation</div><p>Hands-on digital marketing, content and social media execution supporting audience growth and lead generation.</p></div></div>
+   <div class="exp"><div class="exp-date">Previous Experience</div><div><h3>Digital Marketing Experience</h3><div class="company">Learners India</div><p>Worked with Learners India on digital marketing activities. This is part of my previous experience and is intentionally separated from my current Spacemen Digital project portfolio.</p><div class="project-links"><a class="project-link" href="https://www.learnersindia.com/" target="_blank">learnersindia.com ↗</a></div></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="notable">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">04 — Notable Projects</div><h2>Projects that<br>shaped my work.</h2></div><p>Selected projects from my professional experience, including search visibility, SEO strategy and lead-generation work across India and international markets.</p></div>
+  <div class="project-grid">
+   <article class="project"><div class="project-top"><div><small>Education · XELUXE</small><br><b>TKMCE</b></div><span>SEO</span></div><div class="project-body"><p>Led SEO and digital visibility strategy for TKMCE, highlighted in my resume as a notable education-sector SEO project.</p><div class="project-links"><a class="project-link" href="https://tkmce.ac.in/" target="_blank">Visit website ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>Architecture · XELUXE</small><br><b>TKMSA</b></div><span>SEO</span></div><div class="project-body"><p>Worked on search and content optimisation for TKMSA, an architecture education project highlighted in my professional portfolio.</p><div class="project-links"><a class="project-link" href="https://tkmsa.ac.in/" target="_blank">Visit website ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>UAE · XELUXE</small><br><b>Xeluxe Fire Safety</b></div><span>SEO + Leads</span></div><div class="project-body"><p>SEO and lead-generation work for an international fire & safety consultancy, focused on search visibility and qualified enquiries.</p><div class="project-links"><a class="project-link" href="https://xeluxefiresafety.com/" target="_blank">Visit website ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>Paid Search · Advantage</small><br><b>JAC Removals</b></div><span>Google Ads</span></div><div class="project-body"><p>Managed Google Ads activity for JAC Removals, with supplied campaign reporting included in the case-study section.</p><div class="project-links"><a class="project-link" href="case-studies/jac-removals.html">Case study ↗</a><a class="project-link" href="https://jacremovals.com/" target="_blank">Website ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>Paid Search · Advantage</small><br><b>Itrobes</b></div><span>Google Ads</span></div><div class="project-body"><p>Worked on Google Ads for paid acquisition as part of my Advantage Marketing Solutions experience.</p></div></article>
+   <article class="project"><div class="project-top"><div><small>Current · Spacemen Digital</small><br><b>JustCall</b></div><span>AEO</span></div><div class="project-body"><p>Completed AEO work focused on improving brand visibility across generative-search reporting.</p><div class="project-links"><a class="project-link" href="case-studies/justcall-aeo.html">Case study ↗</a><a class="project-link" href="https://justcall.io/" target="_blank">Website ↗</a></div></div></article>
+  </div>
+ </div>
+</section>
+
+<section id="work">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">05 — Website Portfolio</div><h2>Websites I've<br>worked on.</h2></div><p>Selected websites and platforms across SEO, AEO and paid acquisition work.</p></div>
+  <div class="project-grid">
+   <article class="project"><div class="project-top"><div><small>Previous · Learners India</small><br><b>Learners India</b></div><span>Digital Marketing</span></div><div class="project-body"><p>Professional experience from my time working at Learners India. This is a previous company/project, not part of my current Spacemen Digital portfolio.</p><div class="project-links"><a class="project-link" href="https://www.learnersindia.com/" target="_blank">Visit website ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>Xeluxe</small><br><b>Engineering Consultancy</b></div><span>SEO</span></div><div class="project-body"><p>SEO work during the Xeluxe role.</p><div class="project-links"><a class="project-link" href="https://www.linkedin.com/company/xeluxe-engineering-consultancy/" target="_blank">LinkedIn ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>Advantage</small><br><b>Marketing Portfolio</b></div><span>SEO</span></div><div class="project-body"><p>Website and digital marketing work during Advantage Marketing Solutions.</p><div class="project-links"><a class="project-link" href="https://advantagemsolutions.com/" target="_blank">Visit website ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>Advantage</small><br><b>EIQ Cosmetics</b></div><span>SEO</span></div><div class="project-body"><p>SEO and digital marketing work.</p><div class="project-links"><a class="project-link" href="https://eiqcosmetics.com/" target="_blank">Visit website ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>Australia</small><br><b>JBN Cleaning</b></div><span>SEO</span></div><div class="project-body"><p>SEO and digital marketing work.</p><div class="project-links"><a class="project-link" href="https://jbncleaning.au/" target="_blank">Visit website ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>Australia</small><br><b>Hope Cleaning</b></div><span>SEO</span></div><div class="project-body"><p>SEO and digital marketing work.</p><div class="project-links"><a class="project-link" href="https://hopecleaning.au/" target="_blank">Visit website ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>Australia</small><br><b>JAC Removals</b></div><span>Google Ads</span></div><div class="project-body"><p>Worked on Google Ads for JAC Removals as part of paid acquisition work.</p><div class="project-links"><a class="project-link" href="case-studies/jac-removals.html">Case study ↗</a><a class="project-link" href="https://jacremovals.com/" target="_blank">Visit website ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>SEO</small><br><b>CSSI Services</b></div><span>SEO</span></div><div class="project-body"><p>SEO work.</p><div class="project-links"><a class="project-link" href="https://cssiservices.com/" target="_blank">Visit website ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>SEO</small><br><b>The Zoomies Stores</b></div><span>SEO</span></div><div class="project-body"><p>SEO work with search performance tracked in Search Console.</p><div class="project-links"><a class="project-link" href="case-studies/zoomies-stores.html">Case study ↗</a><a class="project-link" href="https://thezoomiesstores.in/" target="_blank">Visit website ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>AEO</small><br><b>JustCall</b></div><span>AEO</span></div><div class="project-body"><p>Completed AEO work with generative-search brand visibility tracking.</p><div class="project-links"><a class="project-link" href="case-studies/justcall-aeo.html">Case study ↗</a><a class="project-link" href="https://justcall.io/" target="_blank">Visit website ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>SEO + AEO</small><br><b>Track3D</b></div><span>SEO</span></div><div class="project-body"><p>Completed SEO and AEO work, including generative-search visibility monitoring.</p><div class="project-links"><a class="project-link" href="case-studies/track3d.html">Case study ↗</a><a class="project-link" href="https://track3d.ai/" target="_blank">Visit website ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>Paid Media</small><br><b>Itrobes</b></div><span>Google Ads</span></div><div class="project-body"><p>Worked as a Google Ads specialist for paid acquisition.</p></div></article>
+  </div>
+ </div>
+</section>
+
+<section id="featured-case-studies">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">06 — Featured Case Studies</div><h2>From strategy<br>to evidence.</h2></div><p>Each case study separates the work scope from the dashboard evidence, so visitors can quickly understand what I worked on and what the supplied reporting shows.</p></div>
+  <div class="project-grid">
+   <article class="project"><div class="project-top"><div><small>Current · Spacemen Digital</small><br><b>CSSI Services</b></div><span>SEO</span></div><div class="project-body"><p>Current SEO project presented as a search-visibility engagement supported by the work scope.</p><div class="project-links"><a class="project-link" href="case-studies/cssi-services.html">Open case study ↗</a><a class="project-link" href="https://cssiservices.com/" target="_blank">Website ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>Advantage</small><br><b>JAC Removals</b></div><span>Google Ads</span></div><div class="project-body"><p>Paid-search work for JAC Removals, presented as a Google Ads case study with the supplied campaign screenshot.</p><div class="project-links"><a class="project-link" href="case-studies/jac-removals.html">Open case study ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>Completed</small><br><b>JustCall</b></div><span>AEO</span></div><div class="project-body"><p>AEO work focused on visibility in generative-search brand reporting, supported by the supplied dashboard.</p><div class="project-links"><a class="project-link" href="case-studies/justcall-aeo.html">Open case study ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>Completed</small><br><b>Track3D</b></div><span>SEO + AEO</span></div><div class="project-body"><p>SEO and AEO work with a supplied generative-search visibility report used as evidence.</p><div class="project-links"><a class="project-link" href="case-studies/track3d.html">Open case study ↗</a></div></div></article>
+   <article class="project"><div class="project-top"><div><small>Completed</small><br><b>The Zoomies Stores</b></div><span>SEO</span></div><div class="project-body"><p>SEO work supported by Search Console performance screenshots supplied for the portfolio.</p><div class="project-links"><a class="project-link" href="case-studies/zoomies-stores.html">Open case study ↗</a></div></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="case" id="case-studies">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">07 — Proof of Work</div><h2>Campaign & search<br>performance.</h2></div><p>Dashboard screenshots supplied for this portfolio. Metrics shown are presented as captured in the source dashboards.</p></div>
+  <div class="case-grid">
+   <article class="case-card"><img src="assets/ads-01.jpeg" alt="Google Ads performance dashboard"><div class="case-content"><div class="case-label">Google Ads</div><h3>Paid campaign snapshot</h3><p>517 clicks · 8.27K impressions · 56 conversions · DH15.5K cost, as shown in the supplied dashboard.</p></div></article>
+   <article class="case-card"><img src="assets/ads-02.jpeg" alt="Google Ads performance dashboard"><div class="case-content"><div class="case-label">Google Ads</div><h3>Higher-volume campaign snapshot</h3><p>1.94K clicks · 16.2K impressions · 737.98 conversions · DH9.55K cost, as shown in the supplied dashboard.</p></div></article>
+   <article class="case-card"><img src="assets/aeo-justcall.jpeg" alt="JustCall AEO brand report"><div class="case-content"><div class="case-label">AEO — JustCall</div><h3>Generative search visibility</h3><p>Supplied report shows 3,254 brand mentions and an average brand position of 3.44 for the displayed reporting period.</p></div></article>
+   <article class="case-card"><img src="assets/aeo-track3d.jpeg" alt="Track3D AEO brand report"><div class="case-content"><div class="case-label">SEO + AEO — Track3D</div><h3>Search + AI visibility</h3><p>Supplied report shows 2,948 brand mentions and an average brand position of 1.92 for the displayed reporting period.</p></div></article>
+ </div>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">08 — Search Evidence</div><h2>SEO performance<br>snapshots.</h2></div><p>Search Console screenshots supplied for the portfolio, useful as visual proof alongside individual case studies.</p></div>
+  <div class="gallery">
+   <figure><img src="assets/seo-01.jpeg" alt="Search Console performance"><figcaption>Search performance snapshot — clicks, impressions, CTR and position.</figcaption></figure>
+   <figure><img src="assets/seo-02.jpeg" alt="Search Console performance"><figcaption>Search performance snapshot — daily search trend.</figcaption></figure>
+   <figure><img src="assets/seo-03.jpeg" alt="Search Console performance"><figcaption>Search performance snapshot — 3-month trend.</figcaption></figure>
+   <figure><img src="assets/seo-04.jpeg" alt="Search Console performance"><figcaption>Search performance snapshot — 5.68K clicks / 967K impressions.</figcaption></figure>
+   <figure><img src="assets/seo-05.jpeg" alt="Search Console performance"><figcaption>Search performance snapshot — 17K clicks / 2.11M impressions.</figcaption></figure>
+ </div>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">09 — Toolkit</div><h2>Tools & capabilities.</h2></div></div>
+  <div class="tools">
+   <div class="tool">SEMrush<span>SEO research & competitive analysis</span></div>
+   <div class="tool">Google Analytics 4<span>Measurement & performance analysis</span></div>
+   <div class="tool">Google Tag Manager<span>Tracking implementation</span></div>
+   <div class="tool">Google Ads<span>Paid search & acquisition</span></div>
+   <div class="tool">Meta Ads<span>Paid social & lead generation</span></div>
+   <div class="tool">Otterly<span>AEO / AI search visibility</span></div>
+   <div class="tool">WordPress CMS<span>Website content & SEO execution</span></div>
+   <div class="tool">Meta Business Suite<span>Social media management</span></div>
+   <div class="tool">YouTube Studio<span>Content analytics</span></div>
+ </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="container">
+  <div class="contact"><div class="contact-grid"><div><div class="kicker">10 — Let's Connect</div><h2>Have a project, role or growth challenge?</h2><p>Let's talk about SEO, AEO, Google Ads, performance marketing or a digital growth project. I'm open to professional opportunities, freelance projects and consulting conversations.</p><div class="contact-details"><a href="mailto:ajithnagappann@gmail.com">✉ ajithnagappann@gmail.com</a><a href="tel:+919487055796">☎ +91 94870 55796</a><a href="tel:+916379990750">☎ +91 63799 90750</a><a href="https://www.linkedin.com/in/ajith-nagappan-3944921a4/" target="_blank">in LinkedIn profile ↗</a></div></div><div class="contact-actions"><a class="btn" href="mailto:ajithnagappann@gmail.com">Email Me ↗</a><a class="btn btn-outline" href="https://www.linkedin.com/in/ajith-nagappan-3944921a4/" target="_blank">Connect on LinkedIn ↗</a></div></div></div>
+ </div>
+</section>
+
+<footer><div class="container footer-inner"><div>© 2026 Ajith Nagappan · Digital Marketing | SEO & AEO Specialist</div><div class="socials"><a href="https://www.linkedin.com/in/ajith-nagappan-3944921a4/" target="_blank">LinkedIn</a><a href="mailto:ajithnagappann@gmail.com">Email</a><a href="tel:+919487055796">Call</a></div></div></footer>
+
+<script>
+function toggleMenu(){
+ const n=document.querySelector('.nav-links');
+ if(n.style.display==='flex'){n.style.display='none';return}
+ n.style.display='flex';n.style.position='absolute';n.style.top='76px';n.style.left='0';n.style.right='0';
+ n.style.padding='20px';n.style.background='#f6f8fb';n.style.flexDirection='column';n.style.alignItems='flex-start';
+ n.style.borderBottom='1px solid #dfe6ef';
+}
+</script>
+</body>
+</html>
